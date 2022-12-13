@@ -1,4 +1,3 @@
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import { createRouteConfig, Link, Outlet } from '@tanstack/react-router'
 
 createRouteConfig({
@@ -29,7 +28,6 @@ function Root() {
       </div>
       <hr />
       <Outlet /> {/* Start rendering router matches */}
-      <TanStackRouterDevtools position="bottom-right" />
     </>
   )
 }
