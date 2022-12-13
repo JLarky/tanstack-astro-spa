@@ -10,7 +10,8 @@
     "start": "npm run dev",
     "build": "tsr build && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "start-qgp": "vite --config qgp.config.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^1.2.1",
@@ -18,8 +19,14 @@
     "@tanstack/react-router": "0.0.1-beta.38",
     "@tanstack/router-cli": "0.0.1-beta.36",
     "astro": "^1.6.12",
+    "qgp": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*",
+    "typescript": "*",
+    "vite-plugin-checker": "*"
   }
 }
