@@ -8,7 +8,7 @@ export const createRouter = () => {
       typeof document !== 'undefined' ? routeConfigClient : routeConfig,
     useServerData: true,
   })
-  if (process.env.VITE) {
+  if (typeof process === 'object' && process.env.VITE) {
     // loadMatchData from packages/router-core/src/router.ts
     router.loadMatchData = async (routeMatch) => {
       const next = router.buildNext({
